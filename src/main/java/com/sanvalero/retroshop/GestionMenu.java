@@ -43,8 +43,9 @@ public class GestionMenu {
             System.out.println("Elige una opción:\n------------------------");
             System.out.println("1. Registrar una consola");
             System.out.println("2. Registrar un juego");
-            System.out.println("3. Registrar un producto de merchandising");
-            System.out.println("0. Salir del menú\n------------------------\n");
+            System.out.println("3. Registrar merchandising");
+            System.out.println("4. Volver al menú");
+            System.out.println("0. Salir del menú\n------------------------");
 
             int opcion = kb.nextInt();
             kb.nextLine();
@@ -60,6 +61,8 @@ public class GestionMenu {
                 case 3:
                     registrarMerchandising();
                     break;
+                case 4:
+                    ejecutarMenu();
                 case 0:
                     salirMenu = true;
                     System.out.println("---------------------\nSaliendo del programa...");
