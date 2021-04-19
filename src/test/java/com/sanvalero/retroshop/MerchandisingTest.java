@@ -1,6 +1,5 @@
 package com.sanvalero.retroshop;
 
-import com.sanvalero.retroshop.domain.Juegos;
 import com.sanvalero.retroshop.domain.Merchandising;
 import org.junit.jupiter.api.Test;
 
