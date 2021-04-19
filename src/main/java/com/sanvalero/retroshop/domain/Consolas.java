@@ -68,4 +68,9 @@ public class Consolas {
         Consolas consolas = (Consolas) o;
         return ano_fabricacion == consolas.ano_fabricacion;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, desarrollador, pais_fabricacion, ano_fabricacion, precio);
+    }
 }

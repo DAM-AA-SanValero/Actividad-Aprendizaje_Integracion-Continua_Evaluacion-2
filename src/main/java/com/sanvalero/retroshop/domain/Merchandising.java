@@ -67,4 +67,9 @@ public class Merchandising {
         Merchandising that = (Merchandising) o;
         return marca.equals(that.marca);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, marca, procedencia, ano_fabricacion, precio);
+    }
 }

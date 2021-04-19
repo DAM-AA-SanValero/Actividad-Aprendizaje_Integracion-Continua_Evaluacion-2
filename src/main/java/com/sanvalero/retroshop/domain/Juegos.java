@@ -67,4 +67,9 @@ public class Juegos {
         Juegos juegos = (Juegos) o;
         return plataforma.equals(juegos.plataforma);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titulo, plataforma, genero, ano_lanzamiento, precio);
+    }
 }
