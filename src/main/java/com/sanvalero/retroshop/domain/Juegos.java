@@ -65,11 +65,6 @@ public class Juegos {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Juegos juegos = (Juegos) o;
-        return ano_lanzamiento == juegos.ano_lanzamiento && Float.compare(juegos.precio, precio) == 0 && titulo.equals(juegos.titulo) && plataforma.equals(juegos.plataforma) && genero.equals(juegos.genero);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(titulo, plataforma, genero, ano_lanzamiento, precio);
+        return plataforma.equals(juegos.plataforma);
     }
 }
