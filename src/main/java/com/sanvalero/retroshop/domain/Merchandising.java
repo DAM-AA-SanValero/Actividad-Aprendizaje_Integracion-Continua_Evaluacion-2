@@ -65,11 +65,6 @@ public class Merchandising {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Merchandising that = (Merchandising) o;
-        return ano_fabricacion == that.ano_fabricacion && Float.compare(that.precio, precio) == 0 && nombre.equals(that.nombre) && marca.equals(that.marca) && procedencia.equals(that.procedencia);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nombre, marca, procedencia, ano_fabricacion, precio);
+        return marca.equals(that.marca);
     }
 }

@@ -10,6 +10,7 @@ public class Consolas {
     private float precio;
 
     public Consolas() {
+
     }
 
     public Consolas(String nombre, String desarrollador, String pais_fabricacion, int ano_fabricacion, float precio) {
@@ -65,12 +66,6 @@ public class Consolas {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Consolas consolas = (Consolas) o;
-        return ano_fabricacion == consolas.ano_fabricacion && Float.compare(consolas.precio, precio) == 0 && nombre.equals(consolas.nombre) && desarrollador.equals(consolas.desarrollador) && pais_fabricacion.equals(consolas.pais_fabricacion);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nombre, desarrollador, pais_fabricacion, ano_fabricacion, precio);
+        return ano_fabricacion == consolas.ano_fabricacion;
     }
 }
-
