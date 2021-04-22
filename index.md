@@ -28,12 +28,10 @@ Proceso de registro
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Creación de este proyecto
 
-### Jekyll Themes
+Este proyecto ha sido posible a partir de realización del ejercicio de la Actividad de Aprendizaje de Integración Continua de la asignatura de Entornos de Desarrollo
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Joserra2304/AA_JoseRamonGimeno/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Contacto
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Cualquier duda puedes consultarme a joserra@retroshop.com o a traves del siguiente telefono: 347382.
