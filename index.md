@@ -1,19 +1,21 @@
-## Welcome to GitHub Pages
+## Bienvenido a RETROSHOP, tu propia tienda on-line Retro
 
 You can use the [editor on GitHub](https://github.com/Joserra2304/AA_JoseRamonGimeno/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### ¿Qué es Retroshop?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Retroshop** es un proyecto de tienda on-line destinada a la venta de productos retro como consolas, videojuegos y merchandising.
+
+Con el podras almacenar tu consolas, juegos y productos como posters, tazas, figuras de todo relacionado con la decada de loas 80-90 de los videojuegos. También tendrás acceso a todo lo que has registrado, pudiendo consultar siempre que quieras tus productos.
 
 ```markdown
-Syntax highlighted code block
+Proceso de registro
 
-# Header 1
-## Header 2
-### Header 3
+# Consolas
+## Registrar consolas
+### Introducir caracteristicas de tu consola a registrar
 
 - Bulleted
 - List
