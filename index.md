@@ -1,8 +1,6 @@
-## Bienvenido a RETROSHOP, tu propia tienda on-line Retro
+## Bienvenido a RETROSHOP, tu propia tienda retro on-line.
 
-You can use the [editor on GitHub](https://github.com/Joserra2304/AA_JoseRamonGimeno/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can use the [editor on GitHub](https://github.com/Joserra2304/AA_JoseRamonGimeno/edit/gh-pages/index.md) 
 
 ### ¿Qué es Retroshop?
 
@@ -11,21 +9,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Con el podras almacenar tu consolas, juegos y productos como posters, tazas, figuras de todo relacionado con la decada de loas 80-90 de los videojuegos. También tendrás acceso a todo lo que has registrado, pudiendo consultar siempre que quieras tus productos.
 
 ```markdown
-Proceso de registro
+Proceso de registro de productos
 
-# Consolas
-## Registrar consolas
-### Introducir caracteristicas de tu consola a registrar
+- ¿Qué producto quieres registrar?
+    1. Consola
+    2. Juego
+    3. Merchandising
 
-- Bulleted
-- List
+- Introduce los datos a registrar
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 ### Creación de este proyecto
@@ -34,4 +26,4 @@ Este proyecto ha sido posible a partir de realización del ejercicio de la Activ
 
 ### Contacto
 
-Cualquier duda puedes consultarme a joserra@retroshop.com o a traves del siguiente telefono: 347382.
+Cualquier duda puedes consultarme a: joserra@retroshop.com o a traves del siguiente telefono: 347382.
