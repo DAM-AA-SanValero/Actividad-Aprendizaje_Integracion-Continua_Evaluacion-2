@@ -2,17 +2,17 @@ package com.sanvalero.retroshop.domain;
 
 import java.util.Objects;
 
-public class Juegos {
+public class Juego {
     private String titulo;
     private String plataforma;
     private String genero;
     private int ano_lanzamiento;
     private float precio;
 
-    public Juegos() {
+    public Juego() {
     }
 
-    public Juegos(String titulo, String plataforma, String genero, int ano_lanzamiento, float precio) {
+    public Juego(String titulo, String plataforma, String genero, int ano_lanzamiento, float precio) {
         this.titulo = titulo;
         this.plataforma = plataforma;
         this.genero = genero;
@@ -64,8 +64,8 @@ public class Juegos {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Juegos juegos = (Juegos) o;
-        return plataforma.equals(juegos.plataforma);
+        Juego juego = (Juego) o;
+        return plataforma.equals(juego.plataforma);
     }
 
     @Override

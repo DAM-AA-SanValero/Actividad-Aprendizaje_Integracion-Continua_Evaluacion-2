@@ -2,18 +2,18 @@ package com.sanvalero.retroshop.domain;
 
 import java.util.Objects;
 
-public class Consolas {
+public class Consola {
     private String nombre;
     private String desarrollador;
     private String pais_fabricacion;
     private int ano_fabricacion;
     private float precio;
 
-    public Consolas() {
+    public Consola() {
 
     }
 
-    public Consolas(String nombre, String desarrollador, String pais_fabricacion, int ano_fabricacion, float precio) {
+    public Consola(String nombre, String desarrollador, String pais_fabricacion, int ano_fabricacion, float precio) {
         this.nombre = nombre;
         this.desarrollador = desarrollador;
         this.pais_fabricacion = pais_fabricacion;
@@ -65,8 +65,8 @@ public class Consolas {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Consolas consolas = (Consolas) o;
-        return ano_fabricacion == consolas.ano_fabricacion;
+        Consola consola = (Consola) o;
+        return ano_fabricacion == consola.ano_fabricacion;
     }
 
     @Override

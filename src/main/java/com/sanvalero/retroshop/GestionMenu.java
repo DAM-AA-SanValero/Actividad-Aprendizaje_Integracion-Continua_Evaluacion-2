@@ -1,7 +1,7 @@
 package com.sanvalero.retroshop;
 
-import com.sanvalero.retroshop.domain.Consolas;
-import com.sanvalero.retroshop.domain.Juegos;
+import com.sanvalero.retroshop.domain.Consola;
+import com.sanvalero.retroshop.domain.Juego;
 import com.sanvalero.retroshop.domain.Merchandising;
 
 import java.util.ArrayList;
@@ -12,8 +12,8 @@ public class GestionMenu {
 
     private boolean salirMenu = false;
 
-    ArrayList<Consolas> listadoConsolas = new ArrayList<>();
-    ArrayList<Juegos> listadoJuegos = new ArrayList<>();
+    ArrayList<Consola> listadoConsolas = new ArrayList<>();
+    ArrayList<Juego> listadoJuegos = new ArrayList<>();
     ArrayList<Merchandising> listadoMerchandising = new ArrayList<>();
 
     public void ejecutarMenu() {
@@ -88,8 +88,8 @@ public class GestionMenu {
         System.out.println("Introduce el precio del producto: ");
         float precio = kb.nextFloat();
 
-        Consolas consolas = new Consolas(nombre, desarrollador, pais_fabricacion, ano_fabricacion, precio);
-        listadoConsolas.add(consolas);
+        Consola consola = new Consola(nombre, desarrollador, pais_fabricacion, ano_fabricacion, precio);
+        listadoConsolas.add(consola);
 
         System.out.println("Consola registrada con éxito\n---------------------------");
     }
@@ -111,8 +111,8 @@ public class GestionMenu {
         System.out.println("Introduce su precio: ");
         float precio = kb.nextFloat();
 
-        Juegos juegos = new Juegos(titulo, plataforma, genero, ano_lanzamiento, precio);
-        listadoJuegos.add(juegos);
+        Juego juego = new Juego(titulo, plataforma, genero, ano_lanzamiento, precio);
+        listadoJuegos.add(juego);
 
         System.out.println("Juego registrado con éxito\n---------------------------");
     }
@@ -175,7 +175,7 @@ public class GestionMenu {
 
     public void visualizarConsolas() {
         System.out.println("Consolas registradas\n----------------------");
-        for (Consolas consola : listadoConsolas) {
+        for (Consola consola : listadoConsolas) {
             System.out.println("PRODUCTO: " + consola.getNombre());
             System.out.println("DESARROLLADOR: " + consola.getDesarrollador());
             System.out.println("PAIS DE FABRICACIÓN: " + consola.getPais_fabricacion());
@@ -190,7 +190,7 @@ public class GestionMenu {
     public void visualizarJuegos() {
 
         System.out.println("Juegos registrados\n----------------------");
-        for (Juegos juego : listadoJuegos) {
+        for (Juego juego : listadoJuegos) {
             System.out.println("TITULO: " + juego.getTitulo());
             System.out.println("PLATAFORMA: " + juego.getPlataforma());
             System.out.println("GÉNERO: " + juego.getGenero());
