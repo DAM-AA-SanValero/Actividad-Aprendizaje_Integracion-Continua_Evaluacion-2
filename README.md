@@ -18,7 +18,8 @@ _Para la realización de este proyecto, se ha trabajado con la metodologia de tr
     A partir de aquí se creó una rama llamada "develop", donde va a estar almacenado todo el proyecto 
     y en la cual se van a fusionar diferentes ramas que van a formar parte de este.
 
-    En esta rama, se creó una clase para gestionar un menu ("GestionMenu"), en la que se registraron y visualizaron los productos.
+    En esta rama, se creó una clase para gestionar un menu ("GestionMenu"), en la que se registraron 
+    y visualizaron los productos.
     (Dentro de develop se creó principalmente el esqueleto del menú).
 
 `CREACION DE LA RAMA FEATURE/CREARCLASES y PULL REQUEST`
@@ -36,14 +37,16 @@ _Para la realización de este proyecto, se ha trabajado con la metodologia de tr
 
 `CREACIÓN DE LA RAMA FEATURE/REGISTRAROBJETOS`
 
-    Se procedió a crear otra rama feature llamada registrar objetos, en la cual se empezó a completar el menú de la clase GestionMenu
+    Se procedió a crear otra rama feature llamada registrar objetos, en la cual se empezó a completar 
+    el menú de la clase GestionMenu
     Se añadieron opciones, con sus respectivas funciones como:
 
         · ¿Que tipo de producto desea registrar? (Consolas, Juegos, Merchandising)
         · Introduce el titulo del producto, precio, etc... (por ejemplo: titulo = "Super Mario", precio = 59.99f).
         · Se crearon métodos como "registrarConsolas()" permitiendo la inserción de datos por teclado dentro de dicho método.
 
-    Los datos de registro introducidos se guardarón en un ArrayList, cuya función permitirá consultar las listas registradas posteriormente.
+    Los datos de registro introducidos se guardarón en un ArrayList, cuya función permitirá consultar 
+    las listas registradas posteriormente.
 
     Al igual que en la rama de crear clases, posteriormente se realizó un Pull Request con la rama develop.
 
@@ -68,10 +71,13 @@ _Para la realización de este proyecto, se ha trabajado con la metodologia de tr
     Una vez se ha comprobado que el proyecto ejecuta correctamente sin errores de sintaxis, etc... 
     se procedió a empaquetarlo utilizando el servidor de automatización Jenkins.
 
-    Se utilizó una OVA descargada de la pagina oficial de bitnami, ejecutada en este caso desde la maquina virtual VirtualBox. 
-    Al ejecutar el OVA tendremos acceso a una dirección IP, a introducir en el navegador, que Bitnami Jenkins nos proporciona junto a unos credenciales. 
+    Se utilizó una OVA descargada de la pagina oficial de bitnami, ejecutada en este caso 
+    desde la maquina virtual VirtualBox. 
+    Al ejecutar el OVA tendremos acceso a una dirección IP, a introducir en el navegador, 
+    que Bitnami Jenkins nos proporciona junto a unos credenciales. 
 
-    Una vez introducida la IP en el navegador, y los credenciales correspodientes tendremos acceso a los servicios de Jenkins.
+    Una vez introducida la IP en el navegador, y los credenciales correspodientes 
+    tendremos acceso a los servicios de Jenkins.
 
 `CONFIGURAR UN JOB EN JENKINS PARA COMPILAR Y EMPAQUETAR EL PROYECTO`
 
@@ -94,16 +100,19 @@ _Para la realización de este proyecto, se ha trabajado con la metodologia de tr
     En este paso, se quisó analizar la calidad que tiene nuestro proyecto. 
     Para ello se empleó la plataforma para evaluar el codigo fuente, SonarQube. 
 
-    El modo de acceder a SonaQube funciona de la misma forma que con Jenkins, accediendo con otra dirección IP y credenciales diferentes
+    El modo de acceder a SonaQube funciona de la misma forma que con Jenkins, 
+    accediendo con otra dirección IP y credenciales diferentes
 
-    Para poder realizar los analisis se debe instalar el plug-in SonarQube Scanner desde Jenkins y posteriormente seguir los siguientes pasos:
+    Para poder realizar los analisis se debe instalar el plug-in SonarQube Scanner desde Jenkins 
+    y posteriormente seguir los siguientes pasos:
 
         1. Una vez instalado el plug-in, en configuración global se indica la última versión a instalar (como se hizo con Maven)
 
         2. En configuración del sistema se añade el servidor de SonarQube, indicando nombre, su dirección IP y credenciales
         a traves de un token generado desde la pagina de SonarQube. De este modo Jenkins podrá comunicarse con SonarQube.
 
-        3. Se creó en la raiz del proyecto el archivo sonar-project.properties, con información importante para que se pueda realizar el análisis sin errores.
+        3. Se creó en la raiz del proyecto el archivo sonar-project.properties, 
+        con información importante para que se pueda realizar el análisis sin errores.
 
         4. En la configuración del job, se agregará otra nueva tarea para que se ejecute SonarQube desde Jenkins
 
@@ -113,13 +122,17 @@ _Para la realización de este proyecto, se ha trabajado con la metodologia de tr
 
 `LANZAR ANALISIS DE CODIGO DEL PROYECTO DESDE LA HERRAMIENTA MAVEN (SONARQUBE-MAVEN)`
 
-    Este tipo de análisis también se puede configurar desde maven (en este caso, en el propio IDE de Intellij). Para que funcione este análisis: 
+    Este tipo de análisis también se puede configurar desde maven (en este caso, en el propio IDE de Intellij). 
+    
+    Para que funcione este análisis: 
 
         1. Se añadió una dependencia al archivo pom.xml para que Maven se comunique con SonarQube,
         
-        2. se creó el archivo settings.xml dentro de la carpeta .m2 del usuario y se indicó la dirección IP de SonarQube para permitir su conexión. 
+        2. se creó el archivo settings.xml dentro de la carpeta .m2 del usuario 
+        y se indicó la dirección IP de SonarQube para permitir su conexión. 
 
-    Finalmente, se compiló el proyecto previamente (mvn compile) y a partir del comando "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=1234" 
+    Finalmente, se compiló el proyecto previamente (mvn compile) 
+    y a partir del comando "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=1234" 
     se procedió a realizar el analisis de código (previamente se compiló el proyecto).
     
     De esta manera, SonarQube analizó el proyecto a partir de Maven, sin necesidad de usar Jenkins.
