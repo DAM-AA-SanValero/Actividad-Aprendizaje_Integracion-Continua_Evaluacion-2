@@ -1,7 +1,5 @@
 ## Bienvenido a RETROSHOP, tu propia tienda retro on-line.
 
-You can use the [editor on GitHub](https://github.com/Joserra2304/AA_JoseRamonGimeno/edit/gh-pages/index.md) 
-
 ### ¿Qué es Retroshop?
 
 **Retroshop** es un proyecto de tienda on-line destinada a la venta de productos retro como consolas, videojuegos y merchandising.
