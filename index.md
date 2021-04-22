@@ -17,6 +17,7 @@ Proceso de registro de productos
     3. Merchandising
 
 - Introduce los datos a registrar
+- Una vez registrado el producto visualiza tu producto registrado cuando y donde quieras.
 
 ```
 
